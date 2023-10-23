@@ -12,18 +12,3 @@ Video Demo
   <img src="https://github.com/RadityaRevanto/otp-field/blob/develop/assets/video_demo.gif" width="330">
 </div>
 <br />
-
-# Installation
-
-
-After installing the package dependencies with
-
-```
-flutter pub get
-```
-
-run the code generation tool
-
-```
-flutter run 
-```
