@@ -17,8 +17,3 @@ Video Demo
   &emsp;&emsp;&emsp;
   <img src="https://github.com/RadityaRevanto/otp-field/blob/develop/assets/video_demo.gif" width="330">
 </div>
-<<<<<<< HEAD
-<br />
-=======
-<br />
->>>>>>> 43a908f5b4156ed45d1ce22952491d006dac4041
