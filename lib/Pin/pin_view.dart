@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import '../Berhasil/berhasil_view.dart';
 import '../shared/shared/style.dart';
 
-class OtpView extends StatefulWidget {
-  const OtpView({super.key});
+class PinView extends StatefulWidget {
+  const PinView({super.key});
 
   @override
-  State<OtpView> createState() => _OtpViewState();
+  State<PinView> createState() => _PinViewState();
 }
 
-class _OtpViewState extends State<OtpView> {
+class _PinViewState extends State<PinView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,21 +17,21 @@ class _OtpViewState extends State<OtpView> {
         decoration: BoxDecoration(
           color: Styles.white,
         ),
-        child: const OtpScreen(),
+        child: const PinScreen(),
       ),
     );
   }
 }
 
-class OtpScreen extends StatefulWidget {
-  const OtpScreen({super.key});
+class PinScreen extends StatefulWidget {
+  const PinScreen({super.key});
 
   @override
-  State<OtpScreen> createState() => _OtpScreenState();
+  State<PinScreen> createState() => _PinScreenState();
 }
 
-class _OtpScreenState extends State<OtpScreen> {
-  bool showErrorMessage = false;
+class _PinScreenState extends State<PinScreen> {
+
   List<String> currentPin = ["", "", "", ""];
   TextEditingController pinOneController = TextEditingController();
   TextEditingController pinTwoController = TextEditingController();
@@ -45,9 +45,9 @@ class _OtpScreenState extends State<OtpScreen> {
 
   int pinIndex = 0;
 
-
-  //Kode Otp Sementara
+  //Kode Pin Sementara
   String correctPin = "1234";
+  bool showErrorMessage = false;
 
   @override
   Widget build(BuildContext context) {
@@ -224,7 +224,6 @@ class _OtpScreenState extends State<OtpScreen> {
     setState(() {});
   }
 
-
   setPin(int n,String text){
     switch(n){
       case 1:
@@ -285,8 +284,8 @@ class _OtpScreenState extends State<OtpScreen> {
           Text(
             "Silahkan Coba Lagi",
             style: TextStyle(
-              color: Colors.red,  // Atur warna teks sesuai keinginan
-              fontSize: 16.0,  // Atur ukuran font sesuai keinginan
+              color: Colors.red,
+              fontSize: 16.0,
             ),
           ),
       ],

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:otp_field/Otp/otp_field.dart';
+import 'package:otp_field/home/home_view.dart';
 import 'package:otp_field/shared/shared/style.dart';
 
 class BerhasilView extends StatefulWidget {
@@ -81,7 +81,7 @@ class _BerhasilViewState extends State<BerhasilView> {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => OtpView(),));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(),));
                   },
                   child: Text(
                     "Lanjutkan",

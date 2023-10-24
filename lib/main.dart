@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:otp_field/Otp/otp_field.dart';
+import 'package:otp_field/home/home_view.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: OtpView(),
+      home: HomePage(),
     );
   }
 }
